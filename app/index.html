@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="lib/html5-boilerplate/dist/css/main.css">
   <link rel="stylesheet" href="app.css">
   <script src="lib/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
+
 </head>
 <body>
 <body ng-app="myApp" ng-controller="weatherCon">
@@ -34,7 +35,7 @@
         <ul class="menu">
           <li class="menu-item current-menu-item"><a href="index.html">{{tester}}</a></li>
           <li class="menu-item"><a href="#">News</a></li>
-          <li class="menu-item"><a href="#">Live cameras</a></li>
+          <li class="menu-item"><a href="#">EZ</a></li>
           <li class="menu-item"><a href="#">Photos</a></li>
           <li class="menu-item"><a href="#">Contact</a></li>
         </ul> <!-- .menu -->
@@ -57,19 +58,19 @@
       <div class="forecast-container">
         <div class="today forecast">
           <div class="forecast-header">
-            <div class="day">Monday</div>
-            <div class="date">6 Oct</div>
+            <div class="day">{{vreme}}</div>
+
           </div> <!-- .forecast-header -->
           <div class="forecast-content">
-            <div class="location">New York</div>
+            <div class="location">{{city}}</div>
             <div class="degree">
-              <div class="num">23<sup>o</sup>C</div>
+              <div class="num">{{stepeniDenes}}<sup>o</sup>C</div>
               <div class="forecast-icon">
                 <img src="images/icons/icon-1.svg" alt="" width=90>
               </div>
             </div>
             <span><img src="images/icon-umberella.png" alt="">20%</span>
-            <span><img src="images/icon-wind.png" alt="">18km/h</span>
+            <span><img src="images/icon-wind.png" alt="">{{description}}km/h</span>
             <span><img src="images/icon-compass.png" alt="">East</span>
           </div>
         </div>
@@ -149,6 +150,7 @@
     </div>
   </div>
 
+  <div id="openweathermap-widget-11"></div>
 
 
 </div>
@@ -178,7 +180,6 @@
   <script src="core/version/version.js"></script>
   <script src="core/version/version-directive.js"></script>
   <script src="core/version/interpolate-filter.js"></script>
-  <script src="js/jquery-1.11.1.min.js"></script>
-  <script src="js/plugins.js"></script>
+
 </body>
 </html>
