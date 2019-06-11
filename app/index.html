@@ -8,73 +8,77 @@
   <link rel="stylesheet" href="lib/html5-boilerplate/dist/css/normalize.css">
   <link rel="stylesheet" href="lib/html5-boilerplate/dist/css/main.css">
   <link rel="stylesheet" href="app.css">
+  <link href="lib/css/bootstrap.min.css" rel="stylesheet">
+
   <script src="lib/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
 
 </head>
-<body>
 <body ng-app="myApp" ng-controller="weatherCon">
 
-<div class="site-content">
-  <div class="site-header">
-    <div class="container">
-      <a href="index.html" class="branding">
-        <img src="images/23793-9-weather-photos.png" alt="" class="logo">
+<div class="container">
+
+    <div class="row meni">
+    <div class="col-sm-7 ">
+      <a href="index.html">
+        <img src="images/23793-9-weather-photos.png" class="logo">
         <div class="logo-type">
           <h1 class="site-title">Временска Прогноза</h1>
           <small class="site-description">Скопје, Македонија</small>
         </div>
       </a>
+    </div>
 
-      <!-- Default snippet for navigation -->
-      <div class="main-navigation">
-        <button type="button" class="menu-toggle"><i class="fa fa-bars"></i></button>
-        <ul class="menu">
+    <div class="col-sm-5">
+      <div class="nav">
+        <ul class="nav navbar-nav ">
           <li class="menu-item current-menu-item"><a href="index.html">Прогноза</a></li>
           <li class="menu-item"><a href="#">Вести</a></li>
           <li class="menu-item"><a href="#">Македонија</a></li>
           <li class="menu-item"><a href="#">Галерија</a></li>
           <li class="menu-item"><a href="#">Контакт</a></li>
-        </ul> <!-- .menu -->
-      </div> <!-- .main-navigation -->
-
+        </ul>
+      </div>
     </div>
-  </div> <!-- .site-header -->
 
-  <div class="hero" data-bg-image="images/banner.png">
-    <div class="container">
+
+  </div>
+
+    <div class="row meni">
+      <div class="col-sm-12">
       <form action="#" class="find-location">
-        <input type="text"  list="dataList" ng-model="getCity" autocomplete="on" placeholder="Побарај локација...">
+        <input class="vnesi" type="text"  list="dataList" ng-model="getCity" autocomplete="on" placeholder="Побарај локација...">
         <datalist id="dataList">
           <option ng-repeat="citi in cities"  value="{{citi}}">{{citi}}</option>
         </datalist>
-        <input type="submit" ng-click="getResult()" value="Пребарувај">
+        <input class="btn-success" type="submit" ng-click="getResult()" value="Пребарувај">
 
 
       </form>
-
+      </div>
     </div>
-  </div>
-  <div class="forecast-table">
-    <div class="container">
-      <div class="forecast-container">
-        <div class="today forecast">
-          <div class="forecast-header">
-            <div class="day">{{vreme}}</div>
 
-          </div> <!-- .forecast-header -->
+    <div class="row boja">
+        <div class="col-sm-2">
+          <div class="forecast-header">
+            <div class="day1">{{vreme}}</div>
+
+          </div>
           <div class="forecast-content">
-            <div class="location"><img src="images/icon-marker.png" alt="" width=20> <b>{{city}}</b></div>
+            <div class="location1"><img src="images/icon-marker.png"  width=20> <b>{{city}}</b></div>
             <div class="degree">
-              <div class="num">{{stepeniDenes}}<sup>o</sup>C</div>
-              <div class="forecast-icon">
-                <img src="http://openweathermap.org/img/w/{{slika}}.png" alt="" width=90>
+
+              <div class="main-icon">
+                <div class="num">{{stepeniDenes}}<sup>o</sup>C</div>
+                <img src="http://openweathermap.org/img/w/{{slika}}.png" a width=50>
+
               </div>
             </div>
-            <span><img src="images/icon-umberella.png" alt="">{{vlaznostDenes}} %</span>
-            <span><img src="images/icon-wind.png" alt="">{{vetar}} km/h</span>
+            <span class="ikonki"><img src="images/icon-umberella.png" >  {{vlaznostDenes}} %</span>
+            <span class="ikonki"><img src="images/icon-wind.png" >  {{vetar}} km/h</span>
           </div>
         </div>
-        <div class="forecast">
+        <div class="col-sm-10">
+        <div class="col-sm-2 mali boja2">
           <div class="forecast-header">
             <div class="day">{{vreme1}}</div>
           </div> <!-- .forecast-header -->
@@ -86,7 +90,7 @@
 
           </div>
         </div>
-        <div class="forecast">
+        <div class="col-sm-2 mali ">
           <div class="forecast-header">
             <div class="day">{{vreme2}}</div>
           </div> <!-- .forecast-header -->
@@ -98,7 +102,7 @@
 
           </div>
         </div>
-        <div class="forecast">
+        <div class="col-sm-2 mali boja2">
           <div class="forecast-header">
             <div class="day">{{vreme3}}</div>
           </div> <!-- .forecast-header -->
@@ -110,7 +114,7 @@
 
           </div>
         </div>
-        <div class="forecast">
+        <div class="col-sm-2 mali">
           <div class="forecast-header">
             <div class="day">{{vreme4}}</div>
           </div> <!-- .forecast-header -->
@@ -122,7 +126,7 @@
 
           </div>
         </div>
-        <div class="forecast">
+        <div class="col-sm-2 mali boja2">
           <div class="forecast-header">
             <div class="day">{{vreme5}}</div>
           </div> <!-- .forecast-header -->
@@ -134,7 +138,7 @@
 
           </div>
         </div>
-        <div class="forecast">
+        <div class="col-sm-2 mali">
           <div class="forecast-header">
             <div class="day">{{vreme6}}</div>
           </div> <!-- .forecast-header -->
@@ -146,17 +150,46 @@
 
           </div>
         </div>
+        </div>
       </div>
-    </div>
-  </div>
+
+    <div class="row meni">
+      <div class="col-sm-7">
+        <img class="slika" src="images/weather-1375260252-article-1.jpg" height="280" width="665"/>
 </div>
-</body>
+      <div class="col-sm-5">
+
+        <p class="text">Времето во земјава ќе биде сончево и значително потопло со мала до умерена облачност. Попладне во планинските подрачја, особено во западните делови ќе има услови за краткотраен дожд и грмежи. УВ индексот 9.
+
+          Утринската температура ќе се движи од 11 до 18 степени,  а дневната температура од  26 до 36 степени.
+
+          Во Скопје ќе биде сончево  со мала до умерена облачност. Утринската температура ќе достигне до 15, а дневната температура до 33 степени.
+
+          Под влијание на топла воздушна маса следува период на значително потопло време. Во следните денови во попладневните часови локално ќе има краткотраен пороен дожд проследен со грмежи, понекаде и појава на град, а понестабилно ќе биде од понеделник.</p>
+
+      </div>
+
+</div>
+
+  <div class="row meni slika">
+  <div class="text text-center">© 2019 Copyright: Gaber
+    <br>
+    <a href="https://github.com/gaberu13/WeatherWebAngularJS"> GitHub Repo</a>
+  </div>
+
+
+  </div>
+
+</div>
+
+
   <script src="lib/angular/angular.js"></script>
   <script src="lib/angular-route/angular-route.js"></script>
   <script src="app.js"></script>
   <script src="core/version/version.js"></script>
   <script src="core/version/version-directive.js"></script>
   <script src="core/version/interpolate-filter.js"></script>
+  <script src="lib/css/bootstrap.min.css"></script>
 
 </body>
 </html>

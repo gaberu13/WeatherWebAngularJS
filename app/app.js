@@ -6,7 +6,7 @@ angular.module('myApp', [])
     function povik($scope,$http) {
         var vm = $scope;
         vm.getCity = "";
-        vm.cities ="Tirana Yerevan Vienna Baku Minsk Brussels Sarajevo Sofia Zagreb Nicosia Prague Copenhagen Tallinn Helsinki Paris Tbilisi Berlin Athens Budapest Reykjavik Dublin Rome Nur-Sultan Pristina Riga Vaduz Vilnius Luxembourg Valletta Chisinau Monaco Podgorica Amsterdam Skopje Oslo Warsaw Lisbon Bucharest Moscow San Marino Belgrade Bratislava Ljubljana Madrid Stockholm Bern Ankara Kyiv London".split(' ');
+
 
 
         $http({
@@ -85,6 +85,7 @@ angular.module('myApp', [])
 
             });
         };
+        vm.cities ="Tirana Yerevan Vienna Baku Minsk Brussels Sarajevo Sofia Zagreb Nicosia Prague Copenhagen Tallinn Helsinki Paris Tbilisi Berlin Athens Budapest Reykjavik Dublin Rome Nur-Sultan Pristina Riga Vaduz Vilnius Luxembourg Valletta Chisinau Monaco Podgorica Amsterdam Skopje Oslo Warsaw Lisbon Bucharest Moscow San Marino Belgrade Bratislava Ljubljana Madrid Stockholm Bern Ankara Kyiv London".split(' ');
 
 }
 
