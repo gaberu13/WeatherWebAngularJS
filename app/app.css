@@ -362,7 +362,7 @@ form textarea {
 
 .hero {
   background-size: cover;
-  padding: 70px 0;
+
   min-height: 350px; }
 
 .find-location {
@@ -371,8 +371,8 @@ form textarea {
 .find-location input[type="text"] {
   width: 100%;
   padding: 20px 50px 20px 20px;
-  background: #1e202b;
-  color: white; }
+  background: #f2f2f2;
+  color: #5e676e; }
 .find-location input[type="submit"] {
   position: absolute;
   top: 5px;
@@ -424,9 +424,9 @@ form textarea {
 .forecast-container .forecast.today .degree .num {
   font-size: 90px;
   font-size: 6.4285714286rem;
-  margin-right: 30px; }
+   }
 .forecast-container .forecast.today span {
-  margin-right: 20px; }
+  margin-right: 10px; }
 .forecast-container .forecast.today span img {
   margin-right: 5px;
   vertical-align: middle; }
@@ -452,8 +452,10 @@ form textarea {
   font-size: 16px;
   font-size: 1.1428571429em; }
 
-
-
+.logo{
+  height: 15%;
+  width: 15%;
+}
 
 
 

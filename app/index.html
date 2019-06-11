@@ -22,10 +22,10 @@
   <div class="site-header">
     <div class="container">
       <a href="index.html" class="branding">
-        <img src="images/logo.png" alt="" class="logo">
+        <img src="images/23793-9-weather-photos.png" alt="" class="logo">
         <div class="logo-type">
-          <h1 class="site-title">Company name</h1>
-          <small class="site-description">tagline goes here</small>
+          <h1 class="site-title">Временска Прогноза</h1>
+          <small class="site-description">Скопје, Македонија</small>
         </div>
       </a>
 
@@ -33,11 +33,11 @@
       <div class="main-navigation">
         <button type="button" class="menu-toggle"><i class="fa fa-bars"></i></button>
         <ul class="menu">
-          <li class="menu-item current-menu-item"><a href="index.html">{{tester}}</a></li>
-          <li class="menu-item"><a href="#">News</a></li>
-          <li class="menu-item"><a href="#">EZ</a></li>
-          <li class="menu-item"><a href="#">Photos</a></li>
-          <li class="menu-item"><a href="#">Contact</a></li>
+          <li class="menu-item current-menu-item"><a href="index.html">Прогноза</a></li>
+          <li class="menu-item"><a href="#">Вести</a></li>
+          <li class="menu-item"><a href="#">Македонија</a></li>
+          <li class="menu-item"><a href="#">Галерија</a></li>
+          <li class="menu-item"><a href="#">Контакт</a></li>
         </ul> <!-- .menu -->
       </div> <!-- .main-navigation -->
 
@@ -47,8 +47,9 @@
   <div class="hero" data-bg-image="images/banner.png">
     <div class="container">
       <form action="#" class="find-location">
-        <input type="text" placeholder="Find your location...">
-        <input type="submit" value="Find">
+        <input type="text" placeholder="Побарај локација...">
+        <input type="submit" value="Пребарувај">
+
       </form>
 
     </div>
@@ -62,95 +63,93 @@
 
           </div> <!-- .forecast-header -->
           <div class="forecast-content">
-            <div class="location">{{city}}</div>
+            <div class="location"><b>{{city}}</b></div>
             <div class="degree">
               <div class="num">{{stepeniDenes}}<sup>o</sup>C</div>
               <div class="forecast-icon">
-                <img src="images/icons/icon-1.svg" alt="" width=90>
+                <img src="http://openweathermap.org/img/w/{{slika}}.png" alt="" width=90>
               </div>
             </div>
-            <span><img src="images/icon-umberella.png" alt="">20%</span>
-            <span><img src="images/icon-wind.png" alt="">{{description}}km/h</span>
-            <span><img src="images/icon-compass.png" alt="">East</span>
+            <span><img src="images/icon-umberella.png" alt="">{{vlaznostDenes}} %</span>
+            <span><img src="images/icon-wind.png" alt="">{{vetar}} km/h</span>
           </div>
         </div>
         <div class="forecast">
           <div class="forecast-header">
-            <div class="day">Tuesday</div>
+            <div class="day">{{vreme1}}</div>
           </div> <!-- .forecast-header -->
           <div class="forecast-content">
             <div class="forecast-icon">
-              <img src="images/icons/icon-3.svg" alt="" width=48>
+              <img src="http://openweathermap.org/img/w/{{slika1}}.png" alt="" width=48>
             </div>
-            <div class="degree">23<sup>o</sup>C</div>
-            <small>18<sup>o</sup></small>
+            <div class="degree">{{stepeniDenes1}}<sup>o</sup>C</div>
+
           </div>
         </div>
         <div class="forecast">
           <div class="forecast-header">
-            <div class="day">Wednesday</div>
+            <div class="day">{{vreme2}}</div>
           </div> <!-- .forecast-header -->
           <div class="forecast-content">
             <div class="forecast-icon">
-              <img src="images/icons/icon-5.svg" alt="" width=48>
+              <img src="http://openweathermap.org/img/w/{{slika2}}.png" alt="" width=48>
             </div>
-            <div class="degree">23<sup>o</sup>C</div>
-            <small>18<sup>o</sup></small>
+            <div class="degree">{{stepeniDenes2}}<sup>o</sup>C</div>
+
           </div>
         </div>
         <div class="forecast">
           <div class="forecast-header">
-            <div class="day">Thursday</div>
+            <div class="day">{{vreme3}}</div>
           </div> <!-- .forecast-header -->
           <div class="forecast-content">
             <div class="forecast-icon">
-              <img src="images/icons/icon-7.svg" alt="" width=48>
+              <img src="http://openweathermap.org/img/w/{{slika3}}.png" alt="" width=48>
             </div>
-            <div class="degree">23<sup>o</sup>C</div>
-            <small>18<sup>o</sup></small>
+            <div class="degree">{{stepeniDenes3}}<sup>o</sup>C</div>
+
           </div>
         </div>
         <div class="forecast">
           <div class="forecast-header">
-            <div class="day">Friday</div>
+            <div class="day">{{vreme4}}</div>
           </div> <!-- .forecast-header -->
           <div class="forecast-content">
             <div class="forecast-icon">
-              <img src="images/icons/icon-12.svg" alt="" width=48>
+              <img src="http://openweathermap.org/img/w/{{slika4}}.png" alt="" width=48>
             </div>
-            <div class="degree">23<sup>o</sup>C</div>
-            <small>18<sup>o</sup></small>
+            <div class="degree">{{stepeniDenes4}}<sup>o</sup>C</div>
+
           </div>
         </div>
         <div class="forecast">
           <div class="forecast-header">
-            <div class="day">Saturday</div>
+            <div class="day">{{vreme5}}</div>
           </div> <!-- .forecast-header -->
           <div class="forecast-content">
             <div class="forecast-icon">
-              <img src="images/icons/icon-13.svg" alt="" width=48>
+              <img src="http://openweathermap.org/img/w/{{slika5}}.png" alt="" width=48>
             </div>
-            <div class="degree">23<sup>o</sup>C</div>
-            <small>18<sup>o</sup></small>
+            <div class="degree">{{stepeniDenes5}}<sup>o</sup>C</div>
+
           </div>
         </div>
         <div class="forecast">
           <div class="forecast-header">
-            <div class="day">Sunday</div>
+            <div class="day">{{vreme6}}</div>
           </div> <!-- .forecast-header -->
           <div class="forecast-content">
             <div class="forecast-icon">
-              <img src="images/icons/icon-14.svg" alt="" width=48>
+              <img src="http://openweathermap.org/img/w/{{slika6}}.png" alt="" width=48>
             </div>
-            <div class="degree">23<sup>o</sup>C</div>
-            <small>18<sup>o</sup></small>
+            <div class="degree">{{stepeniDenes6}}<sup>o</sup>C</div>
+
           </div>
         </div>
       </div>
     </div>
   </div>
 
-  <div id="openweathermap-widget-11"></div>
 
 
 </div>
