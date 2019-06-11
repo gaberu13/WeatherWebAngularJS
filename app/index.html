@@ -15,10 +15,10 @@
 </head>
 <body ng-app="myApp" ng-controller="weatherCon">
 
-<div class="container">
+<div class="container"> <!--Тело на веб страна-->
 
-    <div class="row meni">
-    <div class="col-sm-7 ">
+    <div class="row meni"> <!--Хеадер на страната-->
+    <div class="col-sm-7 "><!--Седум од вкупно 12 поделби резервирани за лого-->
       <a href="index.html">
         <img src="images/23793-9-weather-photos.png" class="logo">
         <div class="logo-type">
@@ -28,7 +28,7 @@
       </a>
     </div>
 
-    <div class="col-sm-5">
+    <div class="col-sm-5"> <!--Мени на веб страната-->
       <div class="nav">
         <ul class="nav navbar-nav ">
           <li class="menu-item current-menu-item"><a href="index.html">Прогноза</a></li>
@@ -43,8 +43,9 @@
 
   </div>
 
-    <div class="row meni">
-      <div class="col-sm-12">
+    <div class="row meni"> <!--Search-->
+      <div class="col-sm-12">     <!--Прикажување на временска прогноза за селектираниот град, моменталната температура сметана по УТЦ временска зона-->
+                                  <!--Прижува температура, брзина на ветер, влажност на воздух, како и температура за наредните 18 часа-->
       <form action="#" class="find-location">
         <input class="vnesi" type="text"  list="dataList" ng-model="getCity" autocomplete="on" placeholder="Побарај локација...">
         <datalist id="dataList">
@@ -153,7 +154,7 @@
         </div>
       </div>
 
-    <div class="row meni">
+    <div class="row meni"><!--Податоци кои се додават во веб страна, артикли, слики итн.-->
       <div class="col-sm-7">
         <img class="slika" src="images/weather-1375260252-article-1.jpg" height="280" width="665"/>
 </div>
@@ -171,7 +172,7 @@
 
 </div>
 
-  <div class="row meni slika">
+  <div class="row meni slika"> <!--Футер на страницата-->
   <div class="text text-center">© 2019 Copyright: Gaber
     <br>
     <a href="https://github.com/gaberu13/WeatherWebAngularJS"> GitHub Repo</a>

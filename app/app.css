@@ -5,7 +5,6 @@
 .logo-type{
     display: inline-block;
     padding-top: 50px;
-
 }
 .site-title{
     font-size: medium;
@@ -21,7 +20,6 @@ input{
     border:none;
     padding:10px;
     border-radius:30px;
-
 }
 .nav{
     padding-top: 6%;
@@ -45,7 +43,6 @@ body{
 .forecast-header{
     margin-top: 10px;
     align-content: center;
-
 }
 .num{
     font-size: 24px;
