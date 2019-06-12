@@ -26,7 +26,7 @@ input{
 
 }
 body{
-    background-color: #1e202b;
+    background-color: #1e202b !important;
 }
 .meni{
     background-color: #1e202b;
@@ -34,6 +34,7 @@ body{
 .find-location{
     padding-left: 20%;
     padding-bottom: 2%;
+    padding-top: 2%;
 }
 .boja{
     background-color: #323544;
@@ -86,4 +87,12 @@ padding-left: 10%;
 }
 .slika{
     padding-top: 15px;
+    padding-bottom: 10px;
+}
+.navigation a{
+    border:2px solid transparent;
+    border-radius:30px;
+    transition:.3s ease;
+    font-weight:400;
+
 }
