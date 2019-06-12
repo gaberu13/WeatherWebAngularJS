@@ -33,6 +33,7 @@ vm.vetar = data.data.list[0].wind.speed;
 npm install angular
 npm run copy-libs
 ```
+Потоа стартувајте го index.html фајлот.
 
 ## Изработил
 
